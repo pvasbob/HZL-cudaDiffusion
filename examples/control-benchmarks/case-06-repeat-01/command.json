@@ -1,0 +1,21 @@
+[
+  "/home/orenliu/HZL-projects/HZL-cudaDiffusion/build/cpu/hzl-control",
+  "--width",
+  "65",
+  "--height",
+  "49",
+  "--endpoint",
+  "120",
+  "--interval",
+  "12.0",
+  "--budget",
+  "60",
+  "--filter-radius",
+  "0",
+  "--method",
+  "simplex",
+  "--backend",
+  "cpu",
+  "--output",
+  "/home/orenliu/HZL-projects/HZL-cudaDiffusion/examples/control-benchmarks/case-06-repeat-01"
+]

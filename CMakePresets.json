@@ -1,0 +1,128 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "cpu",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/cpu",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "name": "cuda",
+      "inherits": "cpu",
+      "binaryDir": "${sourceDir}/build/cuda",
+      "cacheVariables": {
+        "HZL_CUDA": "ON",
+        "CMAKE_CUDA_COMPILER": "/usr/local/cuda-12.1/bin/nvcc"
+      }
+    },
+    {
+      "name": "cpp23",
+      "inherits": "cpu",
+      "binaryDir": "${sourceDir}/build/cpp23",
+      "cacheVariables": {
+        "HZL_CXX_STANDARD": "23"
+      }
+    },
+    {
+      "name": "desktop",
+      "inherits": "cpu",
+      "binaryDir": "${sourceDir}/build/desktop",
+      "cacheVariables": {
+        "HZL_GUI": "ON",
+        "HZL_OPENCV_REFERENCE": "ON"
+      }
+    },
+    {
+      "name": "cuda-desktop",
+      "inherits": "cuda",
+      "binaryDir": "${sourceDir}/build/cuda-desktop",
+      "cacheVariables": {
+        "HZL_GUI": "ON",
+        "HZL_OPENCV_REFERENCE": "ON"
+      }
+    },
+    {
+      "name": "minimal",
+      "inherits": "cpu",
+      "binaryDir": "${sourceDir}/build/minimal",
+      "cacheVariables": {
+        "HZL_OPENCV_OPTIM": "OFF",
+        "HZL_OPENCV_IMAGE": "OFF",
+        "HZL_OPENCV_REFERENCE": "OFF"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "cpu",
+      "configurePreset": "cpu"
+    },
+    {
+      "name": "cuda",
+      "configurePreset": "cuda"
+    },
+    {
+      "name": "cpp23",
+      "configurePreset": "cpp23"
+    },
+    {
+      "name": "desktop",
+      "configurePreset": "desktop"
+    },
+    {
+      "name": "cuda-desktop",
+      "configurePreset": "cuda-desktop"
+    },
+    {
+      "name": "minimal",
+      "configurePreset": "minimal"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "cpu",
+      "configurePreset": "cpu",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "cuda",
+      "configurePreset": "cuda",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "cpp23",
+      "configurePreset": "cpp23",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "desktop",
+      "configurePreset": "desktop",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "cuda-desktop",
+      "configurePreset": "cuda-desktop",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "minimal",
+      "configurePreset": "minimal",
+      "output": {
+        "outputOnFailure": true
+      }
+    }
+  ]
+}

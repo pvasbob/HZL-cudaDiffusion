@@ -1,0 +1,3 @@
+========= COMPUTE-SANITIZER
+PASS: global/tiled stencils, graphs/ordinary launches, CUB MSE, resident candidate reset, zero steps, graph reuse/rebuild
+========= ERROR SUMMARY: 0 errors

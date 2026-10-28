@@ -1,0 +1,7 @@
+{
+  "binary": "/home/orenliu/HZL-projects/HZL-cudaDiffusion/build/cuda/hzl-control",
+  "binary_sha256": "bac11cc26e4f65a22ff9caabf03179238f4e40eac44a3ba478a5ed324f21a2ae",
+  "repeats": 3,
+  "accuracy_relative_tolerance": 1e-05,
+  "accuracy_absolute_tolerance": 1e-13
+}

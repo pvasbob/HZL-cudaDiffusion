@@ -1,0 +1,22 @@
+name: CPU validation
+on: [push, pull_request]
+jobs:
+  numerical:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        preset: [cpu, cpp23, minimal, desktop]
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y ninja-build libopencv-dev
+      - run: cmake --preset ${{ matrix.preset }}
+      - run: cmake --build --preset ${{ matrix.preset }}
+      - run: ctest --preset ${{ matrix.preset }}
+  sanitizers:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y ninja-build libopencv-dev
+      - run: cmake -S . -B build/sanitized -G Ninja -DCMAKE_BUILD_TYPE=Debug -DHZL_SANITIZERS=ON -DHZL_BENCHMARKS=OFF -DHZL_OPENCV_REFERENCE=ON
+      - run: cmake --build build/sanitized
+      - run: ctest --test-dir build/sanitized --output-on-failure

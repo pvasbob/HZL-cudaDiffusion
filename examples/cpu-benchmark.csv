@@ -1,0 +1,5 @@
+backend,width,height,horizon_s,steps,samples,mean_ms,median_ms,p95_ms,max_ms,deadline_misses,real_time_factor,relative_mass_error,device_mean_ms
+cpu,129,97,5,27,10,1.57614,1.52782,1.78428,1.78428,0,3172.32,2.9976e-15,NA
+cpu,129,97,30,162,10,8.33372,8.23853,9.54505,9.54505,0,3599.83,2.22045e-16,NA
+cpu,129,97,120,646,10,31.1171,31.0185,32.0333,32.0333,0,3856.4,2.44249e-15,NA
+cpu,129,97,600,3228,10,155.411,154.841,157.361,157.361,0,3860.73,7.32747e-15,NA

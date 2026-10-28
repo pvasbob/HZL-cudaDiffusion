@@ -1,0 +1,14 @@
+/build/
+/snapshot.csv
+/snapshot.pgm
+
+/observation-*.csv
+/observation-*.pgm
+
+/run/
+/benchmarks/
+/gpu-reports/
+*.nsys-rep
+*.ncu-rep
+
+__pycache__/

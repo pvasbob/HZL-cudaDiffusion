@@ -1,0 +1,11 @@
+operation,variant,width,height,horizon_s_or_radius,setup_ms,samples,mean_ms,median_ms,p95_ms,max_ms,device_mean_ms,final_download_ms,mse_vs_cpu,mass_relative_error
+forecast_mse,cpu_double,33,25,5,0,5,0.0179342,0.017444,0.019791,0.019791,0,0,0,4.44089e-16
+decode_filter,cpu_direct,33,25,0,0,5,0.0024366,0.002084,0.003827,0.003827,0,0,0,0
+decode_filter,opencv_separable,33,25,0,0,5,0.003239,0.002994,0.003896,0.003896,0,0,0,0
+decode_filter,cpu_direct,33,25,2,0,5,0.0354878,0.036357,0.037595,0.037595,0,0,0,-6.07076e-08
+decode_filter,opencv_separable,33,25,2,0,5,0.0157672,0.011954,0.032213,0.032213,0,0,2.85583e-34,-6.07076e-08
+forecast_mse,cpu_double,65,49,5,0,5,0.125235,0.125127,0.125919,0.125919,0,0,0,-1.11022e-15
+decode_filter,cpu_direct,65,49,0,0,5,0.0096606,0.007961,0.013653,0.013653,0,0,0,2.22045e-16
+decode_filter,opencv_separable,65,49,0,0,5,0.015672,0.008544,0.031427,0.031427,0,0,0,2.22045e-16
+decode_filter,cpu_direct,65,49,2,0,5,0.0862212,0.08683,0.086916,0.086916,0,0,0,-2.65665e-09
+decode_filter,opencv_separable,65,49,2,0,5,0.0207026,0.018684,0.028745,0.028745,0,0,3.92921e-34,-2.65665e-09

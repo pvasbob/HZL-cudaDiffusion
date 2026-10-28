@@ -1,0 +1,3 @@
+========= COMPUTE-SANITIZER
+PASS: strided measurement encoding, filter bypass, Gaussian radii/boundaries, chronological process, reconstructed forecasts, candidate isolation, applied controls, invalid input, OpenCV reference
+========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)

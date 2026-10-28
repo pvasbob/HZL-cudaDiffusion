@@ -1,0 +1,12 @@
+observation_s,next_s,target_mse,baseline_mse,evaluations,cycle_ms,deadline_miss,status
+0,1,0.000319033,0.000404021,60,6.36735,0,evaluation_budget
+1,2,0.000240458,0.000393284,60,5.75828,0,evaluation_budget
+2,3,0.000176114,0.000382748,60,5.8069,0,evaluation_budget
+3,4,0.000123987,0.000372411,60,5.0274,0,evaluation_budget
+4,5,8.25726e-05,0.00036227,60,4.57634,0,evaluation_budget
+5,6,5.06621e-05,0.000352325,60,4.28657,0,evaluation_budget
+6,7,2.76139e-05,0.000342572,60,4.19871,0,evaluation_budget
+7,8,1.19356e-05,0.000333009,60,3.55362,0,evaluation_budget
+8,9,2.89418e-06,0.000323634,60,3.04544,0,evaluation_budget
+9,10,6.70375e-10,0.000314446,60,2.75853,0,evaluation_budget;endpoint_reached
+Experiment ended at its endpoint. Diffusion would continue under any subsequently applied temperature.

@@ -1,0 +1,23 @@
+{
+  "repeats": 3,
+  "variants": [
+    [
+      "global",
+      "0"
+    ],
+    [
+      "global",
+      "1"
+    ],
+    [
+      "tiled",
+      "0"
+    ],
+    [
+      "tiled",
+      "1"
+    ]
+  ],
+  "accuracy_relative_tolerance": 1e-06,
+  "accuracy_absolute_tolerance": 1e-14
+}

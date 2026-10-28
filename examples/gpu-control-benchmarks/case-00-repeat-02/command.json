@@ -1,0 +1,21 @@
+[
+  "/home/orenliu/HZL-projects/HZL-cudaDiffusion/build/cuda/hzl-control",
+  "--width",
+  "33",
+  "--height",
+  "25",
+  "--endpoint",
+  "5",
+  "--interval",
+  "0.5",
+  "--budget",
+  "12",
+  "--filter-radius",
+  "0",
+  "--method",
+  "finite",
+  "--backend",
+  "cuda",
+  "--output",
+  "/home/orenliu/HZL-projects/HZL-cudaDiffusion/gpu-reports/matrix/case-00-repeat-02"
+]

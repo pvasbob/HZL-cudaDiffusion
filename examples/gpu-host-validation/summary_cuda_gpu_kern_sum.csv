@@ -1,0 +1,6 @@
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+76.7,5351200,1967,2720.5,2720.0,2687,6911,134.1,"hzl::cuda_detail::diffusion_global(const double *, double *, const double *, int, int, double, double, double)"
+10.2,708461,300,2361.5,2336.0,2304,4480,128.4,"void cub::DeviceReduceKernel<cub::DeviceReducePolicy<double, int, cub::Sum>::Policy600, double *, int, cub::Sum, double>(T2, T5 *, T3, cub::GridEvenShare<T3>, T4)"
+7.2,503516,300,1678.4,1664.0,1631,4128,153.6,"void cub::DeviceReduceSingleTileKernel<cub::DeviceReducePolicy<double, int, cub::Sum>::Policy600, double *, double *, int, cub::Sum, double, double>(T2, T3, T4, T5, T6)"
+5.5,383714,300,1279.0,1248.0,1247,6304,292.4,"hzl::<unnamed>::squared_errors(const double *, const double *, double *, int)"
+0.4,28223,11,2565.7,2528.0,2432,2688,98.8,"hzl::<unnamed>::decode_filter(const double *, double *, int, int, const double *, int)"

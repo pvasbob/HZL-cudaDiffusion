@@ -1,0 +1,88 @@
+{
+  "cuda_resident": "0",
+  "cuda_kernel": "global",
+  "cuda_graphs": "0",
+  "suite": "variants",
+  "measured_utc": "2026-10-27T03:28:54.712383+00:00",
+  "binary_sha256": "bac11cc26e4f65a22ff9caabf03179238f4e40eac44a3ba478a5ed324f21a2ae",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "processor": "x86_64",
+  "python": "3.13.11",
+  "binary": "/home/orenliu/HZL-projects/HZL-cudaDiffusion/build/cuda/hzl-control",
+  "backend": "cuda",
+  "cases": [
+    [
+      65,
+      49,
+      10,
+      60,
+      0,
+      "simplex"
+    ],
+    [
+      129,
+      97,
+      30,
+      60,
+      0,
+      "simplex"
+    ],
+    [
+      257,
+      129,
+      5,
+      60,
+      0,
+      "simplex"
+    ]
+  ],
+  "note": "First control decision excluded from steady-state latency; retained in run CSVs.",
+  "cmake_cache": {
+    "CMAKE_BUILD_TYPE:STRING": "Release",
+    "CMAKE_CUDA_ARCHITECTURES:STRING": "86",
+    "CMAKE_CUDA_FLAGS:STRING": "",
+    "CMAKE_CUDA_FLAGS_DEBUG:STRING": "-g",
+    "CMAKE_CUDA_FLAGS_MINSIZEREL:STRING": "-O1 -DNDEBUG",
+    "CMAKE_CUDA_FLAGS_RELEASE:STRING": "-O3 -DNDEBUG",
+    "CMAKE_CUDA_FLAGS_RELWITHDEBINFO:STRING": "-O2 -g -DNDEBUG",
+    "CMAKE_CXX_FLAGS:STRING": "",
+    "CMAKE_CXX_FLAGS_DEBUG:STRING": "-g",
+    "CMAKE_CXX_FLAGS_MINSIZEREL:STRING": "-Os -DNDEBUG",
+    "CMAKE_CXX_FLAGS_RELEASE:STRING": "-O3 -DNDEBUG",
+    "CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING": "-O2 -g -DNDEBUG",
+    "HZL_BENCHMARKS:BOOL": "ON",
+    "HZL_CUDA:BOOL": "ON",
+    "HZL_CXX_STANDARD:STRING": "20",
+    "HZL_GUI:BOOL": "ON",
+    "HZL_OPENCV_IMAGE:BOOL": "ON",
+    "HZL_OPENCV_OPTIM:BOOL": "ON",
+    "HZL_OPENCV_REFERENCE:BOOL": "ON",
+    "HZL_SANITIZERS:BOOL": "OFF",
+    "HZL_TESTS:BOOL": "ON",
+    "CMAKE_CUDA_FLAGS-ADVANCED:INTERNAL": "1",
+    "CMAKE_CUDA_FLAGS_DEBUG-ADVANCED:INTERNAL": "1",
+    "CMAKE_CUDA_FLAGS_MINSIZEREL-ADVANCED:INTERNAL": "1",
+    "CMAKE_CUDA_FLAGS_RELEASE-ADVANCED:INTERNAL": "1",
+    "CMAKE_CUDA_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL": "1",
+    "CMAKE_CXX_FLAGS-ADVANCED:INTERNAL": "1",
+    "CMAKE_CXX_FLAGS_DEBUG-ADVANCED:INTERNAL": "1",
+    "CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL": "1",
+    "CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL": "1",
+    "CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL": "1"
+  },
+  "compiler": {
+    "returncode": 0,
+    "stdout": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "stderr": ""
+  },
+  "cuda": {
+    "returncode": 0,
+    "stdout": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2023 NVIDIA Corporation\nBuilt on Mon_Apr__3_17:16:06_PDT_2023\nCuda compilation tools, release 12.1, V12.1.105\nBuild cuda_12.1.r12.1/compiler.32688072_0\n",
+    "stderr": ""
+  },
+  "gpu": {
+    "returncode": 0,
+    "stdout": "Mon Oct 26 23:28:54 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 3080        Off |   00000000:01:00.0  On |                  N/A |\n|  0%   56C    P0            133W /  320W |     258MiB /  10240MiB |      3%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A            3815      G   /usr/lib/xorg/Xorg                      144MiB |\n|    0   N/A  N/A            4258      G   /usr/bin/gnome-shell                     21MiB |\n|    0   N/A  N/A            5863      G   ...rack-uuid=3190708988185955192         55MiB |\n+-----------------------------------------------------------------------------------------+\n",
+    "stderr": ""
+  }
+}

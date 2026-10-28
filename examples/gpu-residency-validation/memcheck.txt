@@ -1,0 +1,4 @@
+========= COMPUTE-SANITIZER
+PASS: global/tiled stencils, graphs/ordinary launches, CUB MSE, resident candidate reset, zero steps, graph reuse/rebuild, optimized/fused reduction, coefficient uploads, retained isolation, cross-decision workspace reuse, target cache
+========= LEAK SUMMARY: 0 bytes leaked in 0 allocations
+========= ERROR SUMMARY: 0 errors
