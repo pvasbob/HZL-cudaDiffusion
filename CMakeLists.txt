@@ -114,3 +114,6 @@ if(HZL_TESTS)
     set_tests_properties(cuda-validation PROPERTIES SKIP_RETURN_CODE 77)
   endif()
 endif()
+
+add_executable(hzl-web-engine src/web_main.cpp)
+target_link_libraries(hzl-web-engine PRIVATE hzl)

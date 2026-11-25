@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HZL Diffusion Control</title>
+  <link rel="stylesheet" href="/dashboard.css">
+  <script type="module" src="/dashboard.js"></script>
+</head>
+<body>
+<main>
+  <header><h1>Diffusion control</h1><p id="status" role="status">Connecting…</p></header>
+  <section class="metrics" aria-label="Experiment metrics">
+    <div><span>Simulation time</span><strong id="clock">—</strong></div>
+    <div><span>Target time</span><strong id="endpoint">—</strong></div>
+    <div><span>Target error · MSE</span><strong id="error">—</strong></div>
+    <div><span>Baseline error · MSE</span><strong id="baseError">—</strong></div>
+  </section>
+  <section class="toolbar" aria-label="Simulation controls">
+    <button id="run" class="primary" disabled>Run</button><button id="step" disabled>Step</button>
+    <button id="preview" disabled>Preview</button><button id="reset" disabled>Reset</button>
+    <button id="save" disabled>Save on server</button>
+    <label>Control <select id="mode" disabled><option value="auto">Automatic</option><option value="manual">Manual</option></select></label>
+  </section>
+  <section class="panels" aria-label="Simulation fields">
+    <article><h2>Current concentration</h2><canvas id="concentration"></canvas><p>Simulated concentration · 0–1</p></article>
+    <article><h2>Target concentration</h2><canvas id="target"></canvas><label>Brush <input id="targetBrush" type="number" min="0" max="1" step="0.05" value="1"></label></article>
+    <article><h2>Forecast</h2><canvas id="forecast"></canvas><p id="forecastTime">Press Preview to forecast</p></article>
+    <article><h2>Temperature map</h2><canvas id="temperature"></canvas><label>Brush <input id="tempBrush" type="number" step="1" value="850"> K</label><p id="tempRange"></p></article>
+    <article><h2>Fixed-temperature baseline</h2><canvas id="baseline"></canvas><p>Concentration · 0–1</p></article>
+    <article><h2>Reconstructed concentration</h2><canvas id="reconstructed"></canvas><p>Controller input · 0–1</p></article>
+  </section>
+  <p class="hint">Pause to paint the target or temperature. Use manual mode to apply your painted temperatures on the next step.</p>
+</main>
+</body>
+</html>
